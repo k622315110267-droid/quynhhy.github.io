@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Portfolio - Nguyễn Như Quỳnh</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#071026;
+  --panel:#0e1a2a;
+  --accent:#2bb4ff;
+  --muted:#9aa8c0;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:'Inter',sans-serif;
+  background:linear-gradient(180deg,#050611,#071026);
+  color:#eaf2ff;
+}
+.container{display:flex;min-height:100vh}
+
+/* SIDEBAR */
+.sidebar{
+  width:260px;
+  background:linear-gradient(180deg,#081226,#0f2636);
+  padding:32px 24px;
+  border-right:1px solid rgba(255,255,255,0.05);
+  display:flex;
+  flex-direction:column;
+  gap:18px
+}
+.avatar{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  overflow:hidden;
+  border:4px solid rgba(255,255,255,0.12);
+  box-shadow:0 0 20px #2bb4ff,0 0 30px #6f6bff;
+  animation:glow 3s infinite ease-in-out
+}
+.avatar img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+@keyframes glow{
+  0%{box-shadow:0 0 12px #2bb4ff}
+  50%{box-shadow:0 0 28px #6f6bff}
+  100%{box-shadow:0 0 12px #2bb4ff}
+}
+.name{font-weight:700;font-size:20px;margin-top:6px}
+.role{color:var(--muted);font-size:13px;margin-top:4px}
+.menu{margin-top:22px;display:flex;flex-direction:column;gap:10px}
+.menu a{
+  color:rgba(255,255,255,0.85);
+  text-decoration:none;
+  font-size:15px;
+  padding:8px;
+  border-radius:8px
+}
+.menu a:hover{
+  background:rgba(255,255,255,0.05)
+}
+
+/* MAIN */
+.main{
+  flex:1;
+  padding:40px 56px;
+  animation:fadeIn 1.2s ease-out
+}
+@keyframes fadeIn{
+  from{opacity:0;transform:translateY(10px)}
+  to{opacity:1;transform:none}
+}
+.title{font-size:42px;font-weight:800;color:#dfefff}
+.subtitle{color:var(--muted);margin-top:8px;font-size:16px}
+.btn{
+  padding:12px 20px;
+  border-radius:28px;
+  background:linear-gradient(90deg,#3aa0ff,#6f6bff);
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  margin-right:10px
+}
+.btn-outline{
+  padding:12px 20px;
+  border-radius:28px;
+  border:1px solid rgba(255,255,255,0.1);
+  color:#cfe6ff;
+  text-decoration:none
+}
+.section{margin-top:40px}
+.section h3{font-size:24px;margin-bottom:14px}
+
+.timeline{
+  border-left:2px solid rgba(255,255,255,0.1);
+  padding-left:22px
+}
+.timeline .item{
+  position:relative;
+  padding:14px 0
+}
+.timeline .item:before{
+  content:"";
+  width:10px;height:10px;
+  b
